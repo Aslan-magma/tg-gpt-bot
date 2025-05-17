@@ -6,7 +6,7 @@ from telegram.ext import ApplicationBuilder, ContextTypes, MessageHandler, filte
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 SYSTEM_PROMPT = """
-Ты эксперт по ДО, ДПО и ПО. Отвечай строго по закону, без воды.
+Ты эксперт по дополнительному образованию, ДПО, ПО и лицензированию. Отвечай кратко и по делу.
 """
 
 async def handle(update: Update, context: ContextTypes.DEFAULT_TYPE):
